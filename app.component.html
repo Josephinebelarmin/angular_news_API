@@ -1,0 +1,10 @@
+<div *ngIf = "showNews">
+  <app-news (newsIdEmitter)="newsData($event)"
+   ></app-news>
+
+</div>
+
+<div *ngIf = "!showNews">
+  <app-newsdetails [newsId]="newsDetailId" 
+  (showNewscompEmitter) ="showNews = !showNews"></app-newsdetails>
+</div>

@@ -1,0 +1,14 @@
+
+
+<div>
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="list-group">
+                <li class="list-goup-item" *ngFor = "let news of headlines; let i= index">
+                    <a (click) = "onClick(i)">{{  news.title}}</a>
+                    
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
